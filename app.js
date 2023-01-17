@@ -33,3 +33,6 @@ li.textContent = 'X-men'
 //classes
 li.classList.add('list-items');
 li.classList.remove('list-items');
+
+//Remove elements
+li.remove();
