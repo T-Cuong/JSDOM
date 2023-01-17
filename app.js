@@ -1,19 +1,25 @@
-//GetElementById()
+//STYLING ELEMENT
+// const title = document.querySelector('#main-heading');
+// title.style.color = 'red';
+// console.log(title)
 
-const title = document.getElementById('main-heading');
-console.log(title)
+// const listItems = document.querySelectorAll('.list-items');
+// for( let i = 0; i < listItems.length; i++) {
+//     listItems[i].style.fontSize = '15rem';
+// }
+// console.log(listItems)
 
-//GetElementByClassName()
-const listItems = document.getElementsByClassName('list-items');
-console.log(listItems)
+//CREATING ELEMENTS
+const ul = document.querySelector('ul');
+const li = document.createElement('li');
 
-//getElementsByTagName()
-const list_items = document.getElementsByTagName('li');
-console.log(list_items)
+//Adding Elements
+ul.append(li);
 
-//querySelector()
-const container = document.querySelector('div');
-console.log(container);
-//querySelectorAll()
-const containers = document.querySelectorAll('div');
-console.log(containers);
+//Modifying the text
+const firstListItem = document.querySelector('.list-items');
+console.log(firstListItem.innerText);
+console.log(firstListItem.textContent);
+console.log(firstListItem.innerHTML)
+
+li.textContent = 'X-men'
