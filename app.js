@@ -1,38 +1,34 @@
-//STYLING ELEMENT
-// const title = document.querySelector('#main-heading');
-// title.style.color = 'red';
-// console.log(title)
+//Parent node traversal
+// let ul = document.querySelector('ul');
+// console.log(ul.parentNode);
+// console.log(ul.parentElement);
+// console.log(ul.parentNode.parentNode);
+// console.log(ul.parentElement.parentElement);
 
-// const listItems = document.querySelectorAll('.list-items');
-// for( let i = 0; i < listItems.length; i++) {
-//     listItems[i].style.fontSize = '15rem';
-// }
-// console.log(listItems)
+//let ul = document.querySelector('ul');
+// const html = document.documentElement;
+// console.log(html.parentNode);
+// console.log(html.parentElement);
 
-//CREATING ELEMENTS
-const ul = document.querySelector('ul');
-const li = document.createElement('li');
+//Child node traversal
+//let ul = document.querySelector('ul');
+// console.log(ul.childNodes);
+// console.log(ul.firstChild);
+// console.log(ul.lastChild);
+// ul.childNodes[1].style.backgroundColor = 'blue'
 
-//Adding Elements
-ul.append(li);
+// let ul = document.querySelector('ul');
+// console.log(ul.firstElementChild);
+// console.log(ul.lastElementChild);
 
-//Modifying the text
-const firstListItem = document.querySelector('.list-items');
-console.log(firstListItem.innerText);
-console.log(firstListItem.textContent);
-console.log(firstListItem.innerHTML)
-li.textContent = 'X-men'
+//Sibling node traversal
+// let ul = document.querySelector('ul');
+// const div = document.querySelector('div');
+// console.log(div.childNodes);
+// console.log(ul.previousSibling);
+// console.log(ul.nextSibling);
 
-// Modifying attributes & classes
-//attributes
-// li.setAttribute('id', 'main-heading');
-// li.removeAttribute('id');
-// const title = document.querySelector('#main-heading');
-// console.log(title.getAttribute('id'))
-
-//classes
-li.classList.add('list-items');
-li.classList.remove('list-items');
-
-//Remove elements
-li.remove();
+let ul = document.querySelector('ul');
+const div = document.querySelector('div');
+console.log(ul.previousElementSibling);
+console.log(ul.nextElementSibling)
